@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Type and Run"
+        android:textSize="40dp"
+        android:id="@+id/title"/>
+    <EditText
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+        android:textSize="20sp"
+        android:hint="Make:"
+        android:id="@+id/txtMake"/>
+
+    <EditText
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+        android:textSize="20sp"
+        android:hint="Year:"
+        android:id="@+id/txtYear"/>
+
+    <EditText
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+        android:textSize="20sp"
+        android:hint="Color:"
+        android:id="@+id/txtColor"/>
+
+    <EditText
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+        android:textSize="20sp"
+        android:hint="Purchase price(£):"
+        android:id="@+id/txtPurchasePrice"/>
+
+    <EditText
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+        android:textSize="20sp"
+        android:hint="Engine size(litre):"
+        android:id="@+id/txtEngineSize"/>
+
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_margin="10dp"
+        android:textSize="15sp"
+        android:text="Create Car"
+        android:id="@+id/btnCreateCar"
+        android:layout_gravity="center"/>
+
+
+    -<ScrollView
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent">
+
+    <TextView
+        android:layout_height="200dp"
+        android:layout_width="match_parent"
+        android:text="" android:id="@+id/txtScrollable"
+        android:scrollbars="vertical"
+        style="@style/customStyle"
+        android:layout_marginTop="10dp"/>
+
+</ScrollView>
+
+</LinearLayout>

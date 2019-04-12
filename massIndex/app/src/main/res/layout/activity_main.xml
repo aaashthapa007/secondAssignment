@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="Your Height"
+       android:id="@+id/theight"
+       />
+    <EditText
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/height"
+        android:layout_toRightOf="@+id/theight"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/centimeters"
+        android:layout_toRightOf="@+id/theight"
+        android:layout_below="@id/height"
+        android:text="(centemeters)"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Weight"
+        android:id="@+id/tweight"
+        android:layout_below="@+id/centimeters"
+        />
+    <EditText
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/weight"
+        android:layout_toRightOf="@+id/tweight"
+        android:layout_below="@+id/centimeters"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/kilograms"
+        android:layout_toRightOf="@+id/tweight"
+        android:layout_below="@id/weight"
+        android:text="(kilograms)"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/kilograms"
+        android:layout_centerHorizontal="true"
+        android:text="Computer BMI"
+        android:id="@+id/btnbmi"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnbmi"
+        android:text="Your BMI"
+        android:id="@+id/resultText"
+        android:layout_marginTop="80dp"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_marginTop="80dp"
+        android:id="@+id/result"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/resultText"
+        android:layout_below="@id/btnbmi"
+           />
+
+</RelativeLayout>
